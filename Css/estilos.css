@@ -1,0 +1,259 @@
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s; /* Agregado para animar cambios en el modo oscuro */
+}
+
+header {
+    color: white;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.5s; /* Agregado para animar cambios en el modo oscuro */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 40px;
+    background-color: #fff; /* Agregado fondo blanco para el menú */
+    border-radius: 10px; /* Agregado para bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agregado efecto de sombra */
+    transition: background-color 0.5s; /* Agregado para animar cambios en el modo oscuro */
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: color 0.5s; /* Agregado para animar cambios en el modo oscuro */
+}
+
+.modo-oscuro nav a {
+    color: #050505;
+}
+
+nav a:hover {
+    border-radius: 5px;
+    font-size: 22px;
+    background-color: #ddd; /* Agregado color de fondo al pasar el mouse */
+    transition: background-color 0.3s; /* Agregado animación de color de fondo */
+}
+
+body.modo-oscuro {
+    background-color: #000;
+    color: #ffffff;
+}
+
+.titulo {
+    text-align: center;
+    padding: 20px;
+}
+
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+
+.card {
+    margin: 20px;
+    color: black;
+    padding: 10px;
+    width: 200px;
+    display: inline-block;
+    font-weight: bold;
+    background-color: #fff; /* Agregado color de fondo de las tarjetas */
+    border-radius: 10px; /* Agregado para bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregado efecto de sombra */
+    transition: background-color 0.3s, transform 0.3s; /* Agregado animación de color y escala */
+}
+
+.card:hover {
+    background-color: #f5f5f5; /* Agregado color de fondo al pasar el mouse */
+    transform: scale(1.05); /* Agregado efecto de escala al pasar el mouse */
+}
+
+.card img {
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s; /* Agregado animación de sombra */
+}
+
+.card:hover img {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Agregado aumento de sombra al pasar el mouse */
+}
+
+.add-favorite-button {
+    color: #000;
+    font-weight: bold;
+    background-color: #f5f5f5; /* Agregado color de fondo del botón */
+    border: 1px solid #ddd; /* Agregado borde del botón */
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Agregado animación de color de fondo */
+}
+
+.add-favorite-button:hover {
+    background-color: #ddd; /* Agregado color de fondo al pasar el mouse */
+}
+
+.ModoOscuro {
+    position: sticky;
+    top: 10px;
+    z-index: 100;
+}
+
+#modo-oscuro-btn {
+    cursor: pointer;
+    align-self: center;
+    background-color: rgb(121, 120, 120);
+    border-radius: 50%;
+    padding: 10px;
+    user-select: none;
+    max-width: 24px; /* Puedes ajustar este valor según tus necesidades */
+    max-height: 24px; /* Puedes ajustar este valor según tus necesidades */
+    transition: transform 0.3s; /* Elimina esta línea si no es necesario */
+}
+
+#modo-oscuro-btn:hover {
+    transform: scale(1.1); /* Elimina esta línea si no es necesario */
+}
+#busqueda-container {
+    text-align: center;
+    border: 5px solid #000000fe;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    padding: 10px;
+    margin: 30px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #656d76;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Agregado animación de color de fondo */
+}
+
+#search-input {
+    margin: 10px;
+}
+
+#search-button:hover {
+    background-color: #333; /* Agregado color de fondo al pasar el mouse */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 0 100px;
+    height: 600px;
+}
+
+input#busqueda-input {
+    color: #000;
+    font-size: 30px;
+    width: 50vh;
+    height: 5vh;
+    background-color: white;
+    border-radius: 2%;
+    padding: 10px; /* Aumentado el relleno para mayor comodidad */
+    border: 1px solid #ddd; /* Agregado borde */
+    transition: border 0.3s; /* Agregado animación de borde */
+}
+
+input#busqueda-input:focus {
+    border: 1px solid #656d76; /* Cambiado el color del borde al enfocar */
+}
+
+.form-container {
+    background-color: #f0f0f0; /* Cambiado el color de fondo del contenedor del formulario */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container input,
+.form-container textarea {
+    display: block;
+    margin: 10px 0;
+    padding: 10px; /* Aumentado el relleno para mayor comodidad */
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s; /* Agregado animación de borde */
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    border: 1px solid #656d76; /* Cambiado el color del borde al enfocar */
+}
+
+.form-container button {
+    background-color: #656d76;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Agregado animación de color de fondo */
+}
+
+.form-container button:hover {
+    background-color: #333; /* Agregado color de fondo al pasar el mouse */
+}
+
+.favorito {
+    margin-bottom: 10px;
+}
+
+#favorites-section {
+    text-align: center;
+}
+
+#search-section  {
+    text-align: center;
+}
+
+#clear-favorites {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #656d76;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Agregado animación de color de fondo */
+}
+
+#clear-favorites:hover {
+    background-color: #333; /* Agregado color de fondo al pasar el mouse */
+}
+
+/* Añadido un contorno a los botones */
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    outline: none;
+}
+
+.titulo-contacto{
+    color: #000;
+}

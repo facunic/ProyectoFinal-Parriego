@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Contacto</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="buscar.html">Buscar</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="ModoOscuro">
+        <img id="modo-oscuro-btn" src="../multimedia/bxs-moon.png" alt="Modo Oscuro">
+    </section>
+
+    <main>
+    
+        <div class="form-container">
+            <form id="contact-form">
+                <h1 class="titulo-contacto">Contacto</h1>
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <div class="error-message" id="nombre-error"></div>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <div class="error-message" id="email-error"></div>
+                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                <div class="error-message" id="mensaje-error"></div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="../js/contacto.js"></script>
+</body>
+</html>
